@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b974d5d4-0834-4d60-ae96-68580caf1b3b" name="Changes" comment="Read excel file, fill data to VaccinationData, sort by arrival time and leaving time">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/proj/utils/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/proj/utils/CreateSubLists.java" afterDir="false" />
+    <list default="true" id="b974d5d4-0834-4d60-ae96-68580caf1b3b" name="Changes" comment="CreateSubLists from file and calculate intervals with provided interval, VaccinationDataStore delete,&#10;cleanup">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/proj/algorithms/BruteForce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/proj/algorithms/BruteForceResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/proj/importFile/MainResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/proj/models/CreateSubListsResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/proj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proj/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/proj/importFile/ImportFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proj/importFile/ImportFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/proj/store/VaccinationDataStore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/proj/utils/CreateSubLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proj/utils/CreateSubLists.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655328226535</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="CreateSubLists from file and calculate intervals with provided interval, VaccinationDataStore delete,&#10;cleanup">
+      <created>1655495253288</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655495253288</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,17 +117,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Read excel file, fill data to VaccinationData, sort by arrival time and leaving time" />
-    <option name="LAST_COMMIT_MESSAGE" value="Read excel file, fill data to VaccinationData, sort by arrival time and leaving time" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/proj/utils/CreateSubLists.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="CreateSubLists from file and calculate intervals with provided interval, VaccinationDataStore delete,&#10;cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="CreateSubLists from file and calculate intervals with provided interval, VaccinationDataStore delete,&#10;cleanup" />
   </component>
 </project>

@@ -1,5 +1,6 @@
 package org.proj.utils;
 
+import org.proj.models.CreateSubListsResult;
 import org.proj.models.VaccinationData;
 
 import java.time.LocalDateTime;
@@ -7,12 +8,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CreateSubLists {
-    public int[] getLists(List<VaccinationData> vaccinationDataArriving,
-                          List<VaccinationData> vaccinationDataLeaving,
-                          int interval) {
+    public CreateSubListsResult getLists(List<VaccinationData> vaccinationDataArriving,
+                                         List<VaccinationData> vaccinationDataLeaving,
+                                         int interval) {
         // init values
         int listLength = Constants.MAX_LIST_LENGTH / interval;
         int[] differences = new int[listLength];
+        LocalDateTime[] timeIntervals = new LocalDateTime[listLength];
         StringBuilder sb = new StringBuilder();
         int arrived = 0;
         int left = 0;
@@ -42,6 +44,7 @@ public class CreateSubLists {
             // calculate difference and save it
             int difference = arrived - left;
             differences[i] = difference;
+            timeIntervals[i] = dateFrom;
 
             // reset variables, new dates
             arrived = 0;
@@ -51,7 +54,8 @@ public class CreateSubLists {
         }
 
 
-        return differences;
+        // return differences;
+        return new CreateSubListsResult(differences, timeIntervals);
     }
 
     private boolean checkDateFromTo(LocalDateTime date, LocalDateTime dateFrom, LocalDateTime dateTo) {

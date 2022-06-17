@@ -1,7 +1,11 @@
 package org.proj;
 
 import com.isep.mdis.Sum;
+import org.proj.algorithms.BruteForce;
+import org.proj.algorithms.BruteForceResult;
 import org.proj.importFile.ImportFile;
+import org.proj.importFile.MainResult;
+import org.proj.models.CreateSubListsResult;
 import org.proj.models.VaccinationData;
 import org.proj.utils.CreateSubLists;
 
@@ -30,13 +34,20 @@ public class Main {
         vaccinationDataListByLeavingDate = new ArrayList<>(vaccinationDataList);
         vaccinationDataListByLeavingDate.sort(Comparator.comparing(VaccinationData::getLeavingDateTime));
 
-        for (VaccinationData v : vaccinationDataListByLeavingDate) {
-            System.out.println(v);
-        }
+        // get subLists, intervals, copy original list
+        CreateSubListsResult subListsResult = new CreateSubLists().getLists(vaccinationDataListByArrivalDate, vaccinationDataListByLeavingDate, interval);
+        int[] originalDifferenceList = Arrays.copyOf(subListsResult.getDifferences(), subListsResult.getDifferences().length);
+
+        // BruteForce algorithm
+        BruteForceResult forceResult = BruteForce.findMaxSubsequence(subListsResult.getDifferences());
 
 
-        new CreateSubLists().getLists(vaccinationDataListByArrivalDate, vaccinationDataListByLeavingDate, interval);
+        // result
+        MainResult res = new MainResult(originalDifferenceList, forceResult.getArraySubList(), forceResult.getMaxSum(),
+                subListsResult.getTimeIntervals()[forceResult.getStart()],
+                subListsResult.getTimeIntervals()[forceResult.getEnd()]);
 
+        // System.out.println(res);
     }
 
     private void testSum() {
