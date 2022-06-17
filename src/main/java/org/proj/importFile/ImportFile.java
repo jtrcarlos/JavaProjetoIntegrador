@@ -2,6 +2,7 @@ package org.proj.importFile;
 
 import org.proj.models.VaccinationData;
 import org.proj.models.VaccinationDataIndex;
+import org.proj.utils.Constants;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -36,7 +37,7 @@ public class ImportFile {
     }
 
     private static VaccinationData createVaccinationData(String line) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("M/d/y H:m");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(Constants.DATE_FORMAT);
         String[] data = line.split(";");
 
         String snsNumber = data[VaccinationDataIndex.SNS_NUMBER.ordinal()];

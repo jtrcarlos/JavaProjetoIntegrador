@@ -3,7 +3,7 @@ package org.proj;
 import com.isep.mdis.Sum;
 import org.proj.importFile.ImportFile;
 import org.proj.models.VaccinationData;
-import org.proj.store.VaccinationDataStore;
+import org.proj.utils.CreateSubLists;
 
 import java.util.*;
 
@@ -12,10 +12,12 @@ public class Main {
         List<VaccinationData> vaccinationDataListByArrivalDate;
         List<VaccinationData> vaccinationDataListByLeavingDate;
         Scanner scanner = new Scanner(System.in);
-        VaccinationDataStore store = new VaccinationDataStore();
 
         System.out.println("Insert file name:");
         String fileName = scanner.nextLine();
+
+        System.out.println("Insert interval in minutes (30,20,10,5,1):");
+        int interval = scanner.nextInt();
 
         // read list from file
         List<VaccinationData> vaccinationDataList = ImportFile.readExcel(fileName);
@@ -24,12 +26,16 @@ public class Main {
         vaccinationDataListByArrivalDate = new ArrayList<>(vaccinationDataList);
         vaccinationDataListByArrivalDate.sort(Comparator.comparing(VaccinationData::getArrivalDateTime));
 
+        // sort by leaving date
         vaccinationDataListByLeavingDate = new ArrayList<>(vaccinationDataList);
         vaccinationDataListByLeavingDate.sort(Comparator.comparing(VaccinationData::getLeavingDateTime));
 
         for (VaccinationData v : vaccinationDataListByLeavingDate) {
             System.out.println(v);
         }
+
+
+        new CreateSubLists().getLists(vaccinationDataListByArrivalDate, vaccinationDataListByLeavingDate, interval);
 
     }
 

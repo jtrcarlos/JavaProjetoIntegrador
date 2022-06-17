@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b974d5d4-0834-4d60-ae96-68580caf1b3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/proj/store/VaccinationDataStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b974d5d4-0834-4d60-ae96-68580caf1b3b" name="Changes" comment="Read excel file, fill data to VaccinationData, sort by arrival time and leaving time">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/proj/utils/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/proj/utils/CreateSubLists.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/proj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proj/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/proj/importFile/ImportFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proj/importFile/ImportFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/proj/models/VaccinationData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proj/models/VaccinationData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/proj/models/VaccinationDataIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proj/models/VaccinationDataIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/proj/store/VaccinationDataStore.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,17 +40,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Projects/ISEP/JavaProjetoIntegrador",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.31724137",
-    "settings.editor.selected.configurable": "preferences.general"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Projects/ISEP/JavaProjetoIntegrador&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.31724137&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Projects\ISEP\JavaProjetoIntegrador" />
@@ -89,6 +86,14 @@
       <option name="presentableId" value="Default" />
       <updated>1655310739782</updated>
     </task>
+    <task id="LOCAL-00001" summary="Read excel file, fill data to VaccinationData, sort by arrival time and leaving time">
+      <created>1655328226535</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1655328226535</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,5 +106,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Read excel file, fill data to VaccinationData, sort by arrival time and leaving time" />
+    <option name="LAST_COMMIT_MESSAGE" value="Read excel file, fill data to VaccinationData, sort by arrival time and leaving time" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/proj/utils/CreateSubLists.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
