@@ -4,7 +4,6 @@ import org.proj.models.CreateSubListsResult;
 import org.proj.models.VaccinationData;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 public class CreateSubLists {

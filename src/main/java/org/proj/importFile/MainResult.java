@@ -25,7 +25,7 @@ public class MainResult {
         StringBuilder sb = new StringBuilder();
         sb.append(Arrays.toString(arrayInput)).append("\n");
         sb.append(Arrays.toString(arraySubList)).append("\n");
-        sb.append(maxSum).append("\n");
+        sb.append("Soma: ").append(maxSum).append("\n");
         sb.append(startLocalDateTime).append(" - ").append(endLocalDateTime);
 
         return sb.toString();

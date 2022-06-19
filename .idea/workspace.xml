@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b974d5d4-0834-4d60-ae96-68580caf1b3b" name="Changes" comment="CreateSubLists from file and calculate intervals with provided interval, VaccinationDataStore delete,&#10;cleanup">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/proj/algorithms/BruteForce.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/proj/algorithms/BruteForceResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/proj/importFile/MainResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/proj/models/CreateSubListsResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/proj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proj/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/proj/utils/CreateSubLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proj/utils/CreateSubLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/proj/algorithms/BruteForce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proj/algorithms/BruteForce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/proj/importFile/MainResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proj/importFile/MainResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/proj/models/VaccinationData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proj/models/VaccinationData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,17 +39,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Projects/ISEP/JavaProjetoIntegrador&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.31724137&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/ISEP/JavaProjetoIntegrador/lib/Sum-1.0.0.jar",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.31724137",
+    "settings.editor.selected.configurable": "preferences.general"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Projects\ISEP\JavaProjetoIntegrador" />

@@ -2,7 +2,6 @@ package org.proj.models;
 
 import java.time.LocalDateTime;
 
-
 public class VaccinationData {
     private String snsNumber;
     private String vaccineName;

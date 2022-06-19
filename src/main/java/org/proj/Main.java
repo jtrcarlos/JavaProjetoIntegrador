@@ -47,7 +47,7 @@ public class Main {
                 subListsResult.getTimeIntervals()[forceResult.getStart()],
                 subListsResult.getTimeIntervals()[forceResult.getEnd()]);
 
-        // System.out.println(res);
+        System.out.println(res);
     }
 
     private void testSum() {
